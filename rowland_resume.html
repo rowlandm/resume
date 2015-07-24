@@ -8,24 +8,168 @@
         <meta name="author" content="Rowland Mmosbergen"/>
         <meta name="description" content="" />
         <meta name="keywords" content="" />
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" ></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js" ></script>
 
         <script type="text/javascript">
+            $(document).ready(function(){
+                right_col_height = $('div.right_col').css('height');
+                $('div.left_col').css('height',right_col_height);
+            });
         </script>
 
         <style> 
+            body { 
+                font-family: Arial;
+                font-size: 16px;
+            }
             div.header { 
                 height: 100px;
-                border-bottom: 4px solid gray;
                 line-height: 100px;
+                font-weight: bold;
+                font-family: Arial;
+                font-size: 20px;
                 text-align: center;
             }
+
+            #limited_body_width {
+              width: 1006px;
+              margin: 0 auto;
+            }
+            div.left_col  {
+                float:left;
+                height: auto;
+                width: 300px;
+                background-color: #2D5781;
+                color: #FFF;
+            }
+            div.left_col_text {padding-left: 20px; padding-right:20px;} 
+            div.top_left_col { height: 100px; }
+
+            div.right_col_text {padding-left: 20px; }
+            div.right_col  {
+                float:left;
+                width: 706px;
+                color: #2D5781;
+
+            }
+            div.right_col ul li { margin-bottom: 8px; }
+            ul li.bold { font-weight: bold; }
+            div.short { width: 60px; float:left; font-weight: bold; }
+            .big_bottom_margin { margin-bottom:40px; }
+            .small_bottom_margin { margin-bottom:20px; }
+            .big_left_margin {margin-left: 40px;}
+            .small_left_margin {margin-left: 20px;}
+            div.main_titles { color: #000;  font-weight: bold; font-size: 20px; }
+            div.small_titles { color: #000;  font-weight: bold; font-size: 16px; }
+            div.points_of_interest { color: #000;  text-align: justify; text-justify:inter-word; width: 600px;}
         </style>
 
     </head>
     <body>
             
-        <div class="header" >Resume of Rowland Mosbergen</div>  
+
+        <div id="limited_body_width" >
+
+
+            <div class="left_col" >
+                <div class="top_left_col"></div>
+                <div class="left_col_text">
+                    <ul>
+                        <li class="bold">Hello</li>
+                        <li class="bold">Hello</li>
+                        <li class="bold">Hello</li>
+                        <li class="bold">Hello</li>
+                        <li class="bold">Hello</li>
+                        <li class="bold">Hello</li>
+                        <li></li>
+                        <li>Nothing</li>
+                        <li>Noting</li>
+                        <li></li>
+                    </ul>
+                </div> <!-- end left_col_text -->
+
+            </div> <!-- end of left_col -->
+
+            <div class="right_col" >
+                <div class="header" >Resume of Rowland Mosbergen</div>  
+                <div class="right_col_text">
+                    <div class="contact_details big_bottom_margin">
+                        <div class="contact"><div class="short">email:</div> rowland.mosbergen@gmail.com</div>
+                        <div class="contact"><div class="short">skype:</div> rowlandm76</div>
+                        <div class="contact"><div class="short">city:</div> Brisbane,Australia</div>
+                    </div>
+                    <div class="main_titles small_bottom_margin">Strengths</div>
+                    <div class="points_of_interest big_bottom_margin">
+                        <ul>
+                            <li>Ability to learn and adapt to new environments and situations very quickly and very effectively</li>
+                            <li>Ability to interface and communicate with both technical staff and end-users, both at a low level and at a boardroom level, in their own respective language</li>
+                            <li>Wide range of experience in different types of roles in different types of organisations</li>
+                            <li>Ability to future-proof systems due to my focus on risk management,my ability to diagnose the heart of the problem and my ability develop a solution/strategy that is acceptable to all parties - even when I am not the expert in the field</li>
+                            <li>Ability to lead and manage both technical and non-technical staff</li>
+                            <li>Ability to complete project to deadlines efficiently and effectively regardless of the programming language or the environment</li>
+                            <li>Priority focus on the client and end-user. Technology is there to serve them</li>
+                        </ul>
+                    </div>
+
+                    <div class="main_titles small_bottom_margin">Work History</div>
+
+                    <div class="small_titles small_bottom_margin">Project Manager at Stemformatics</div>
+                    <div class="points_of_interest big_bottom_margin">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>                    
+
+                    <div class="small_titles small_bottom_margin">Web Developer at Celentia</div>
+                    <div class="points_of_interest big_bottom_margin">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>                    
+                    <div class="small_titles small_bottom_margin">Business Owner of PDKM</div>
+                    <div class="points_of_interest big_bottom_margin">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>                    
+
+                    <div class="small_titles small_bottom_margin">Team Leader at GBST</div>
+                    <div class="points_of_interest big_bottom_margin">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>                    
+
+
+
+                    <div class="main_titles small_bottom_margin">Interests</div>
+                    <div class="points_of_interest big_bottom_margin">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>                </div> <!-- end right_col_text -->
+
+            </div> <!-- end of right -->
+
+
+
+        </div>  
+        
+
     </body>
 </html>  
 
