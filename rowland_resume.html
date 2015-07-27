@@ -13,6 +13,7 @@
         <script type="text/javascript">
             $(document).ready(function(){
                 right_col_height = $('div.right_col').css('height');
+                right_col_height = '1544px'; // one page of A4 on google chrome
                 right_col_height = '2944px'; // two pages of A4 on google chrome
                 right_col_height = '4690px'; // three pages of A4 on google chrome
                 $('div.left_col').css('height',right_col_height);
@@ -20,10 +21,12 @@
         </script>
 
         <style> 
+            .small { font-size: 20px; }
+            .gap_left_col { height: 200px; }
             .hidden { display: none; }
             body { 
                 font-family: Arial;
-                font-size: 26px;
+                font-size: 24px;
             }
             .clear {clear:both;}
             div.header { 
@@ -58,6 +61,7 @@
                 color: #2D5781;
 
             }
+            //li { text-align: justify; text-justify:inter-word; }
             div.right_col ul li { margin-bottom: 8px; }
             ul li.bold { font-weight: bold; }
             div.short { width: 90px; float:left; font-weight: bold; }
@@ -97,22 +101,23 @@
                         <li>Software Design</li>
                         <li>Automated Testing</li>
                         <li>Test-driven development</li>
+                        <li>Application Profiling</li>
                         <li>Big data</li>
                         <li>Bioinformatics</li>
                         <li>Future-proofing</li>
                         <li>Troubleshooting</li>
                         <li>Business analysis</li>
-                        <li>Proactive Monitoring</li>
+                        <li>Infrastructure Monitoring</li>
                         <li>Process improvement</li>
                         <li>ITIL-like approach</li>
                         <li>Requirements gathering</li>
                         <li>Project management</li>
                         <li>Documentation</li>
                         <li>Multi-lingual websites</li>
-                        <li>Lead distributed workforces</li>
-                        <li>UX Graphic Design</li>
-                        <li>Visualisation</li>
+                        <li>Mail server Integration</li>
+                        <li>Payment Integration</li>
                         <li>Third party integration</li>
+                        <li>Visualisation</li>
                         <li>IT service support</li>
                     </ul>
                     <ul>
@@ -132,33 +137,26 @@
                         <li>Stemformatics Colleague</li>
                         <li>o.korn@uq.edu.au</li>
                     </ul>
-                    <div class="top_left_col big_bottom_margin"></div>
+                    <div class="gap_left_col big_bottom_margin"></div>
                     <ul class="clear big_top_margin">
-                        <li>Paypal integration</li>
-                        <li>e-Marketing integration</li>
-                        <li>Exchange integration</li>
-                        <li>PHP email processing</li>
-                        <li>Multi-lingual websites</li>
-                        <li>PDF Invoice creation </li>
-                        <li>PHP 5+</li>
-                        <li>Python 2.7+</li>
-                        <li>d3/Canvas Visualisation</li>
-                        <li>JQuery/JS/CSS</li>
-                        <li>Redis</li>
-                        <li>PostGreSQL</li>
-                        <li>MySQL</li>
-                        <li>MS-SQL</li>
-                        <li>Java</li>
-                        <li>R</li>
-                        <li>SMTP servers/Mandrill</li>
-                        <li>Nagios/Zabbix</li>
-                        <li>CentOS/Ubuntu</li>
-                        <li>Apache/IIS</li>
-                        <li>Windows Server 2003</li>
-                        <li>Exchange Server 2003</li>
-                        <li>Citrix Server</li>
-                        <li>Thin client setup</li>
-                        <li>PDF  creation </li>
+                    </ul>
+                    
+                    <ul class="clear big_top_margin">
+                        <li>Rowland provides a great deal of energy, enthusiasm and productivity to the project. He is very intelligent and very quick.</li>
+                        <li>&nbsp;</li>
+                        <li class="small">-- Christine Wells, Stemformatics </li>
+                    </ul>
+
+                    <div class="gap_left_col big_bottom_margin"></div>
+                    <div class="gap_left_col big_bottom_margin"></div>
+                    <div class="gap_left_col big_bottom_margin"></div>
+                    <div class="gap_left_col big_bottom_margin"></div>
+                    <div class="gap_left_col big_bottom_margin"></div>
+                    <div class="gap_left_col big_bottom_margin"></div>
+                    <ul class="clear big_top_margin">
+                        <li>Rowlands proactive and fixed cost service model was the best I have come across and I recommend Rowland as a professional and reliable operator who is always keen to provide excellent results and go the extra mile to ensure his clients get good outcomes.</li>
+                        <li>&nbsp;</li>
+                        <li class="small">-- Jason Bragger, Financial Planner</li>
                     </ul>
 
 
@@ -197,10 +195,11 @@
                             <li>Project Manager role includes asset management, business analysis, business reporting and includes working with staff based in Scotland.</li>
                             <li>Went from having to learn python, pylons and stem cell bioinformatics to running the project to a successful first phase and an extra $250,000 within 6 months</li>
                             <li class="new_page">Stemformatics optimised for speed using Redis to replace database table with approximately 34.5 million keys that equates to 275 billion data points that uses 15GB of RAM</li>
-                            <li>Web front end using Pylons, Redis,Perl,PostgreSQL, SQLSoup, Java, flot, HTML5, jQuery, Python, Selenium and nosetests</li>
+                            <li>Web front end using Pylons, Redis, Perl, PostgreSQL, SQLSoup, Java, flot, HTML5, jQuery, d3, BioJS, Python, Selenium and nosetests</li>
                             <li>Created and maintain CakePHP website with MySQL backend for tracking projects and data. Also created apis to Google Calendar API and to our other systems to connect back to this website for reporting purposes.</li>
                             <li>Streamlined manual data import process into an online system that increased efficiency and effectiveness of the data import process.</li>
                             <li>Requirement gathering and building Stemformatics database to simplify the process of biologists exploring their gene of interest in other datasets</li>
+                            <li>Profiling Python middleware via Dozer. Profiling website network via Webpagetest.org/</li>
 
                         </ul>
                     </div>                    
@@ -213,6 +212,7 @@
                             <li>CMS based www.gourmetgarden.com using CakePHP and jQuery with MS-SQL. Included multi-lingual translations and data slicing by locale. International website.</li>
                             <li>Requirement gathering and building e-health web functionality to automate the manual recall process for multiple sites using PHP created PDF letters. Implemented using CodeIgniter framework.</li>
                             <li>Number of integration projects including Campaign Monitor for e-Marketing, Paypal and Microsoft Exchange 2003.</li>
+                            <li>Profiling PHP via Xdebug.</li>
                             <li>Basic work with Word XML files.</li>
                         </ul>
                     </div>                    
@@ -241,6 +241,7 @@
                             <li>Went from having little programming knowledge coming out of university to volunteering for the most complex situation within the Margin Lending team that ended up calculating the risk management for over a billion dollars of loans and equity for clients such as Merrill Lynch and National Australia Bank.</li>
                             <li>Progress 8 development in character GUI environment.</li>
                             <li>Requirements gathering, project management and support of Enterprise level software.</li>
+                            <li>Profiling Progress 4GL software and database via proprietary software.</li>
                         </ul>
                     </div>                    
 
